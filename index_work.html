@@ -6,7 +6,18 @@
 		<meta name="description" content="" />
 		<meta name="author" content="" />
 		<title>Usi Archive</title>
-		<link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/YouTubePopUp.css">
+        <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+        <script type="text/javascript" src="js/YouTubePopUp.jquery.js"></script>
+        <script type="text/javascript">
+            jQuery(function(){
+                jQuery("a.bla-1").YouTubePopUp();
+                jQuery("a.bla-2").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
+            });
+        </script>
+            
+		<link href="css/styles.css" rel="stylesheet"/>
+        
     </head>
     
     <body>
@@ -23,7 +34,7 @@
 							<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">MENU</a>
 							<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
 								<li><a class="dropdown-item" href="assets/RESUME.png" target="_blank">About me</a></li>
-								<li><a class="dropdown-item" href="otherworksindex.html">Other Works</a></li>
+								<li><a class="dropdown-item" href="https://dbtl0507.github.io/video">Other Works</a></li>
 								<li><a class="dropdown-item" href="https://dbtl0507.github.io/contact">Contact</a></li>
                                 <hr>
                                 <li><a class="dropdown-item" href="https://www.linkedin.com/in/animusi/" target="_blank">LinkedIn</a></li>
@@ -39,6 +50,7 @@
 
     
         <!--Page Content-->
+
 
         <style>
             picture{
@@ -72,43 +84,56 @@
             }
         </style>
 
-        
-
-        <div class="container">
-			<div class="text-center mt-5">
-				<h1>Usi Archive</h1>
-                <div class="picture">
-                    <img src="assets/Profile.jpg"/>
-                </div>
-                <br>
-                <p class="lead">Hello, I'm Sangjin Kim(Usi)</p>
-			</div>
-
-			<div class="text-center mt-5">
-				<a href="assets/RESUME.png" target="_blank" style="text-decoration:none">
-                    <strong>ABOUT ME</strong>
-                </a>
-                <strong>|</strong>
-                <a href="index_work.html" style="text-decoration:none">
-                    <strong>OTHER WORKS</strong>
-                </a>
-                <strong>|</strong>
-                <a href="#" style="text-decoration:none">
-                    <strong>CONTACT</strong>
-                </a>
-            </div>
             
+    
 
-			<div class="text-center mt-5">
-				<p class="lead">LATEST SHOWREEL</p>
-			
-			
-            <div class="wrap">
-                <div class="player">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=JYXDqtHyw1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+
+            <div class="text-center mt-5">
+            
+                <h2>Other Works</h2>
+                <p>
+                </p>
+                <br>
+                <br>
+                <br>
+                
+
+
+            <p>
+                <a class="bla-2" href="https://www.youtube.com/watch?v=JYXDqtHyw1w">
+                    <img src="assets/Constrain Animation.jpg" />
+                </a>
+                <a class="bla-2" href="https://www.youtube.com/watch?v=Kz113UWHcNA">
+                    <img src="assets/Lip Sync Animation.jpg" />
+                </a>
+                <a class="bla-2" href="https://www.youtube.com/watch?v=VlKBCF0kGRs">
+                    <img src="assets/Standing Up Animation.jpg" />
+                </a>
+                <p></p>
+                <a class="bla-2" href="https://www.youtube.com/watch?v=TQja1qSkkLY">
+                    <img src="assets/Walk Cycle Animation(Female).jpg" />
+                </a>
+                <a class="bla-2" href="https://www.youtube.com/watch?v=K1dwrY7npKM">
+                    <img src="assets/Walk Cycle Animation With Action.jpg" />
+                </a>
+                <a class="bla-2" href="https://www.youtube.com/watch?v=lu9e4KH3nt0">
+                    <img src="assets/Walk Cycle Animation.jpg" />
+                </a>
+                <p></p>
+                <a class="bla-2" href="https://www.youtube.com/watch?v=pXbHaLAzWvo">
+                    <img src="assets/Bounce Ball Interactions.jpg" />
+                </a>
+                
+            </p>
+            
+            <p>
+                
+            </p>
+
+
             </div>
-            <br>
+
+
 
         <footer id="footer">
             <div class="content">
@@ -118,7 +143,5 @@
 
 		<!-- Bootstrap core JS-->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-		<!-- Core theme JS-->
-		<script src="js/scripts.js"></script>
     </body>
 </html>
