@@ -7,6 +7,7 @@
 		<meta name="author" content="" />
 		<title>Usi Archive</title>
 		<link href="css/styles.css" rel="stylesheet" />
+        
     </head>
     
     <body>
@@ -70,45 +71,84 @@
                 display: inline;; padding: 0 7px 0 10px; white-space: nowrap;
                 padding-top: 30px;
             }
-        </style>
-
-        
-
-        <div class="container">
-			<div class="text-center mt-5">
-				<h1>Usi Archive</h1>
-                <div class="picture">
-                    <img src="assets/Profile.jpg"/>
-                </div>
-                <br>
-                <p class="lead">Hello, I'm Sangjin Kim(Usi)</p>
-			</div>
-
-			<div class="text-center mt-5">
-				<a href="assets/RESUME.png" target="_blank" style="text-decoration:none">
-                    <strong>ABOUT ME</strong>
-                </a>
-                <strong>|</strong>
-                <a href="otherworks.html" style="text-decoration:none">
-                    <strong>OTHER WORKS</strong>
-                </a>
-                <strong>|</strong>
-                <a href="contact.html" style="text-decoration:none">
-                    <strong>CONTACT</strong>
-                </a>
-            </div>
             
 
-			<div class="text-center mt-5">
-				<p class="lead">LATEST SHOWREEL</p>
+
+        </style>
+        
+        <div class="text-center mt-5">
+            
+            <h3><strong>Contact</strong></h3>
+        </div>
+        
+        <br>
+
+        <div class="container">
+            
 			
-			
-            <div class="wrap">
-                <div class="player">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/JYXDqtHyw1w?si=ACc1VxfZfk7wqFA1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-            <br>
+                <link rel="stylesheet" href="css/pure.css">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css">
+                <link rel="stylesheet" href="style.css">
+
+                <form class="gform pure-form pure-form-stacked" method="POST" data-email="dbtl0507@gmail.com"
+                action="https://script.google.com/macros/s/AKfycbxQYKwat4IVwHWobugMZ4cpzeMV_7fa86D2nQ49eTnUFIqYTUcqKVDRLXuoANfxTS1j-A/exec">
+
+                    <div class="form-elements" width="10px">
+                        <aside>
+                            <p>
+                                I would love to hear from you! </p>
+                                <p>Please use the <b>Contact Form</b>
+                                to send us a message.
+                            </p>
+                        </aside>
+
+                    <fieldset class="pure-group">
+                        <label for="name">Name: </label>
+                        <input id="name" name="name"/>
+                    </fieldset>
+
+                    <fieldset class="pure-group">
+                        <label for="email"><em>Your</em> Email Address:</label>
+                        <input id="email" name="email" type="email" value=""
+                        required placeholder="name@email.com"/>
+                    </fieldset>
+
+                    <fieldset class="pure-group">
+                        <label for="message">Message: </label>
+                        <textarea id="message" name="message" rows="10"
+                        ></textarea>
+                    </fieldset>
+
+                    
+
+                    <div class="text-center mt-5">
+
+                        <button class="button-success pure-button button-xlarge">
+                            <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+                        </div>
+                
+                    </div>
+
+                    <div class="thankyou_message" style="display:none;">
+                        <div class="text-center mt-5">
+                            <p></p>
+                            <br>
+                            <h2><strong>Thanks for contacting me!</strong></h2>
+                            <p></p>
+                            <h4>I will get back to you soon!</h4>
+                        </div>
+                      
+                    </div>
+                
+                  </form>
+
+                <!-- Submit the Form to Google Using "AJAX" -->
+                <script data-cfasync="false" type="text/javascript"
+                src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+
+
+
+
 
         <footer id="footer">
             <div class="content">
