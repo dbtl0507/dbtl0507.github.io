@@ -7,3 +7,9 @@
 // Use this file to add JavaScript to your project
 
 
+/* Demo purposes only */
+$(".hover").mouseleave(
+    function() {
+      $(this).removeClass("hover");
+    }
+  );
